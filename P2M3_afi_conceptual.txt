@@ -1,0 +1,58 @@
+===========================================
+Identity
+
+Name : Rafina Dhiya Pradani
+===========================================
+
+
+Conceptual Problems
+
+1. What is NoSQL?
+NoSQL is a type of database that does not rely on the fixed table structures used in traditional relational databases. Instead, it offers a flexible way to store and manage data that may not fit neatly into rows and columns. This makes NoSQL ideal for handling unstructured or semi-structured data, such as JSON files, logs, or social media posts. NoSQL databases are designed to scale easily, meaning they can handle very large amounts of data by spreading the data across multiple servers. They are fast and efficient, especially for applications where the data format changes frequently or grows rapidly, like real-time analytics, content management systems, or IoT platforms. These features make NoSQL databases popular for modern, dynamic applications that require flexibility and performance.
+
+
+2. When to Use NoSQL vs. Relational Database Management Systems (RDBMS)?
+Use NoSQL when:
+- The data doesn’t have a fixed structure or format.
+- Large amounts of data need to be processed quickly.
+- It is important to scale easily and allow fast data operations.
+- Examples: Social media, IoT data, or live analytics.
+
+Use RDBMS when:
+- Data follows a clear and consistent structure (like tables with rows and columns).
+- Strong data consistency and relationships between records are required.
+- Complex queries need to be executed using SQL.
+- Examples : banking systems, HR databases, or inventory management.
+
+
+3. Examples of NoSQL Tools (Other than Elasticsearch)
+- MongoDB
+    - Strengths: Stores data in JSON-like documents, making it flexible and easy to use. It’s great for apps with changing data structures.
+    - Use Case: Suitable for content management, IoT applications, and mobile app data storage.
+
+- Cassandra
+    - Strengths: Handles large amounts of data across multiple servers without downtime. Perfect for high-speed, write-heavy tasks.
+    - Use Case: Best for logging systems, real-time analytics, and IoT data.
+
+
+4. What is Airflow?
+- Airflow is a tool used to manage workflows or pipelines. It enables the scheduling, monitoring, and execution of tasks in a specific order. Tasks and their dependencies are defined using a Directed Acyclic Graph (DAG). Airflow is ideal for automating processes such as data cleaning, transferring data between systems, and executing scripts on a set schedule.  
+- Use Case: Automating data processes like ETL, monitoring workflows, and ensuring tasks are executed as planned.
+
+
+5. What is Great Expectations?
+- Great Expectations is a tool for checking and validating data quality. It allows users to create "rules" (called expectations) to ensure data meets specific standards, such as being complete, accurate, or consistent. For example, it can check if a column contains only numbers, if there are missing values, or if data follows a specific format. This ensures that data is clean and reliable before being used for analysis or other processes.
+- Use Case: Validating data for errors, ensuring completeness, and checking data quality before analysis.
+
+
+6. What is Batch Processing?
+Batch processing is a way to handle large amounts of data all at once. Instead of processing data immediately, tasks are grouped and run together at scheduled times. Batch processing is good for tasks where real-time updates aren’t necessary but handling lots of data efficiently is important.
+
+Examples:
+- Generating monthly invoices for customers.
+- Processing daily sales reports for an e-commerce platform.
+
+Tools:
+- Apache Hadoop: Processes large datasets across multiple machines.
+- Apache Spark: Processes data quickly and handles both batch and real-time data.
+- Airflow: Schedules and monitors batch tasks.

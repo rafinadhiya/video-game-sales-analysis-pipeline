@@ -1,0 +1,45 @@
+===========================================
+Identity
+
+Name : Rafina Dhiya Pradani
+===========================================
+
+
+===========================================
+Data Definition Language Syntax
+===========================================
+Defines the structure of the `table_m3` table, specifying columns, data types, and constraints using `CREATE TABLE`.
+
+
+===========================================
+URL Dataset
+===========================================
+https://www.kaggle.com/datasets/sagayaabinesh/videogames/data
+
+CREATE TABLE table_m3 (
+    "Rank" INTEGER,
+    "Name" TEXT,
+    "Platform" TEXT,
+    "Year" FLOAT,
+    "Genre" TEXT,
+    "Publisher" TEXT,
+    "NA_Sales" FLOAT,
+    "EU_Sales" FLOAT,
+    "JP_Sales" FLOAT,
+    "Other_Sales" FLOAT,
+    "Global_Sales" FLOAT
+);
+
+
+===========================================
+Data Manipulation Language Syntax
+===========================================
+Inserts data from a CSV file into the `table_m3` table using `COPY`.
+
+COPY table_m3 ("Rank", "Name", "Platform", "Year", "Genre", "Publisher", "NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales")
+FROM '/tmp/P2M3_afi_data_raw.csv'
+WITH (
+    FORMAT csv,
+    HEADER true,
+    DELIMITER ','
+);
